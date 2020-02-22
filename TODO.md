@@ -1,3 +1,15 @@
-- [ ] add README.md
-- [ ] use github-metadata plugin
+- [ ] use [github-metadata plugin](https://github.com/jekyll/github-metadata)
+    - [ ] use default variables to allow no changes after fork
+- [ ] add `README.md` and documentation
+    - [ ] add tutorial (clone, gh-page)
+    - [ ] add how-to-guide (post, themes) 
+    - [ ] add references (theme, categories) 
+- [ ] setup categories
+    - [x] category page 
+    - [ ] paginated categories 
+    - [ ] page for each category 
+    - [ ] feeds for each category
+- [ ] setup [ tags ](http://longqian.me/2017/02/09/github-jekyll-tag/)
 - [ ] improve mobile view 
+    - [ ] improve about page
+    - [ ] improve navbar
