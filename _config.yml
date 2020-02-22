@@ -16,5 +16,7 @@ thanks:
     }
 
 # other config
+exclude: 
+  - LICENSE
 plugins:
   - jekyll-feed
