@@ -5,7 +5,7 @@ category: "summary"
 tags: ["writing", "articles"]
 desc: This article tries to summaries "Write An Excellent Programming Blog"
 ---
-I came across a Article the other day. It was titled ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog). This inspired me to start writing blogs. So I will start my blog by summarizing it. 
+The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write article. It categories articles, and details about how to write articles for given categories. This helps in providing guidelines for beginners to write articles.
 
 ## Type of articles
 1. story
@@ -28,7 +28,7 @@ I came across a Article the other day. It was titled ["Write An Excellent Progra
     - explain how x works
 
 1. review
-    - i used x
+    - I used x
     - the experience 
     - the strength vs weakness
     - conclusion (using some criteria)
