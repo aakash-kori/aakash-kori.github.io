@@ -1,0 +1,29 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<div class="row mt-4">
+  <div class="col-sm-5 offset-sm-1 align-self-center">
+    <div class="mt-2">
+      <h4>Hello, I'm</h4>
+      <h1>{{site.username}},</h1>
+      <h2>Developer</h2>
+      <br />
+      <br />
+      <ul class="list-unstyled">
+        <li>
+          <img style="width:20px" src="{{site.baseurl}}/images/envelope-square.svg" />{{site.email}}<br />
+        </li>
+        <li>
+          <img style="width:20px" src="{{site.baseurl}}/images/github-square.svg" />https://github.com/{{site.username}}<br />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-5 col-sm-offset-1">
+    <div class="mt-2">
+      <img class="rounded-circle img-thumbnail" src="{{site.avatar}}" alt="Profile picture">
+    </div>
+  </div>
+</div>

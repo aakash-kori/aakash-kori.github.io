@@ -1,0 +1,11 @@
+---
+layout: page 
+permalink: /
+---
+<h2>
+   Recent Articles
+</h2>
+{% for post in site.posts limit:2 %}
+    {%include post_item.html post=post%}
+{% endfor %}
+

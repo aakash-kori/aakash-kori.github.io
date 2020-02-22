@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /categories/
+title: Categories
+---
+{% for category in site.categories %}
+<h2>{{ category | first | capitalize }}</h2>
+{% for post in category.last %}
+<div class="list-group ">
+    {% include post_item.html post=post %}
+</div>
+{% endfor %}
+{% endfor %}

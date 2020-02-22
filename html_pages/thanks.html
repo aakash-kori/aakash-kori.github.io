@@ -1,0 +1,11 @@
+---
+layout: page
+title: Thanks
+permalink: /thanks/
+---
+<h2>Thanks to</h2>
+<ul class="list-group">
+    {% for repo in site.thanks %}
+    <li class="list-group-item">{{repo.author}} for <a href={{repo.link}}>{{repo.name}}</a></li>
+    {% endfor %}
+</ul>
