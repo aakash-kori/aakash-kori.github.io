@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+  <link rel="shortcut icon" href="{{site.baseurl}}/images/sticky-note.svg">
+</head>
+</header>
+
+<body>
+  {% include nav.html %}
+  {{ content }}
+</body>
+
+</html>
