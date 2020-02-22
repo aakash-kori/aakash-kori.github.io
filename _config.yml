@@ -1,5 +1,6 @@
 # site
 baseurl: "/sak96-blog"
+title: "sak96-blog"
 
 # about me 
 username: sak96
@@ -16,5 +17,8 @@ thanks:
     }
 
 # other config
+exclude: 
+  - LICENSE
+  - TODO.md
 plugins:
   - jekyll-feed
