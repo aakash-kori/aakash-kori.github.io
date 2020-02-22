@@ -19,5 +19,6 @@ thanks:
 # other config
 exclude: 
   - LICENSE
+  - TODO.md
 plugins:
   - jekyll-feed
