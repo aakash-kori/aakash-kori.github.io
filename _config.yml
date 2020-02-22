@@ -1,0 +1,20 @@
+# site
+baseurl: ""
+
+# about me 
+username: sak96
+email: sakamath1996@gmail.com 
+avatar: "https://github.com/sak96.png"
+
+# thanks to
+thanks:
+  - { author: twbs, name: bootstrap, link: "https://github.com/twbs/bootstrap" }
+  - {
+      author: ivanvotti,
+      name: font-awesome-svg,
+      link: "https://github.com/ivanvotti/font-awesome-svg",
+    }
+
+# other config
+plugins:
+  - jekyll-feed
