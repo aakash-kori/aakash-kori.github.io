@@ -14,3 +14,6 @@
     - [ ] improve about page
     - [x] improve navbar
 - [ ] add copyright in post page
+- [ ] theme based fixes
+    - [ ] highlight current theme
+    - [ ] try to fix the delay in loading theme
