@@ -1,5 +1,5 @@
-- [ ] use [github-metadata plugin](https://github.com/jekyll/github-metadata)
-    - [ ] use default variables to allow no changes after fork
+- [x] use [github-metadata plugin](https://github.com/jekyll/github-metadata)
+    - [x] use default variables to allow no changes after fork
 - [ ] add `README.md` and documentation
     - [ ] add tutorial (clone, gh-page)
     - [ ] add how-to-guide (post, themes) 
@@ -12,4 +12,5 @@
 - [ ] setup [ tags ](http://longqian.me/2017/02/09/github-jekyll-tag/)
 - [ ] improve mobile view 
     - [ ] improve about page
-    - [ ] improve navbar
+    - [x] improve navbar
+- [ ] add copyright in post page
