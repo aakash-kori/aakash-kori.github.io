@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'Summary: "Write An Excellent Programming Blog"'
-category: "summary"
-tags: ["writing", "articles"]
+category: "notes"
+tags: ["writing", "articles", "programming"]
 desc: This article tries to summaries "Write An Excellent Programming Blog"
 ---
-The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write article. It categories articles, and details about how to write articles for given categories. This helps in providing guidelines for beginners to write articles.
+The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write programing articles. It categories articles, and details about how to write articles for given category. This helps in providing guidelines for beginners to write articles.
 
 ## Type of articles
 1. Story
