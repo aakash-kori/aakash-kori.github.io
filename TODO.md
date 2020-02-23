@@ -15,5 +15,5 @@
     - [x] improve navbar
 - [ ] add copyright in post page
 - [ ] theme based fixes
-    - [ ] highlight current theme
+    - [x] highlight current theme
     - [ ] try to fix the delay in loading theme

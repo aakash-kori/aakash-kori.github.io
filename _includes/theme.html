@@ -40,6 +40,15 @@
         link.rel = "stylesheet";
         document.head.appendChild(link);
 
+        // mark current theme as active
+        var themeItems = document.getElementsByClassName("theme-item");
+        Array.from(themeItems).forEach(element => {
+            element.classList.remove("active")
+            if (element.getAttribute("theme") == theme) {
+                element.classList.add("active")
+            }
+        })
+
         // deselect dropdown
         var themeMenu = document.getElementById("theme-menu");
         themeMenu.classList.remove("show")
