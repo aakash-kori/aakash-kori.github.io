@@ -11,14 +11,17 @@ permalink: /about/
       <h2>Developer</h2>
       <br />
       <br />
-      <ul class="list-unstyled">
-        <li>
-          <img style="width:20px" src="{{site.baseurl}}/images/envelope-square.svg" />{{site.email}}<br />
-        </li>
-        <li>
-          <img style="width:20px" src="{{site.baseurl}}/images/github-square.svg" />https://github.com/{{site.username}}<br />
-        </li>
-      </ul>
+      <div class="row" >
+        {% capture url%}{{ "mailto:"| append: site.email }}{% endcapture %}
+        {%include about_icon.html url=url img="envelope-square.svg"%}
+
+        {% capture url%}{{ "https://github.com/"| append: site.username}}{% endcapture %}
+        {%include about_icon.html  url=url img="github-square.svg" %}
+
+        {% capture url%}{{ site.baseurl | append: "/feed.xml"}}{% endcapture %}
+        {%include about_icon.html url=url img="rss-square.svg" %}
+      </div>
+
     </div>
   </div>
   <div class="col-sm-5 col-sm-offset-1">

@@ -7,20 +7,12 @@
         <ul class="navbar-nav">
             {%include nav_item.html url="/" name="Home"%}
             {%include nav_item.html url="/categories/" name="Categories"%}
-            {%include nav_item.html url="/about/" name="About"%}
-            {%include nav_item.html url="/thanks/" name="Thanks"%}
         </ul>
         <ul class="navbar-nav ml-auto">
             {%include theme.html %}
-
-            {% capture url%}{{ "mailto:"| append: site.email }}{% endcapture %}
-            {%include nav_icon.html url=url img="envelope-square.svg"%}
-
-            {% capture url%}{{ "https://github.com/"| append: site.username}}{% endcapture %}
-            {%include nav_icon.html  url=url img="github-square.svg" %}
-
-            {% capture url%}{{ site.baseurl | append: "/feed.xml"}}{% endcapture %}
-            {%include nav_icon.html url=url img="rss-square.svg" %}
+            {%include nav_item.html url="/feed.xml" name="Feeds"%}
+            {%include nav_item.html url="/about/" name="About"%}
+            {%include nav_item.html url="/thanks/" name="Thanks"%}
         </ul>
     </div>
 </nav>
