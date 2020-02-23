@@ -1,9 +1,6 @@
 <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" id="theme-btn">
-        <img style="width:40px;" src="{{site.baseurl}}/images/cog.svg">
-    </a>
+    <a href="#" class="nav-link dropdown-toggle" id="theme-btn">Themes</a>
     <ul class="dropdown-menu" id="theme-menu">
-        <li class="dropdown-header">Themes</li>
         {% for file in site.static_files %}
         {% if file.extname == ".css" %}
         <li class="dropdown-item theme-item" theme="{{site.baseurl}}{{file.path}}">{{file.basename}}</li>
