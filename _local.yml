@@ -1,0 +1,16 @@
+# github metadata site information (populated by  jekyll-github-metadata plugin)
+baseurl: ""
+title: "sak96-blog"
+github:
+  owner:
+    email: sakamath1996@gmail.com
+  owner_gravatar_url: "https://github.com/sak96.png"
+  owner_name: "sak96"
+  owner_url: "https://github.com/sak96"
+
+# plugins required for local running
+plugins:
+  - jekyll-feed
+
+
+
