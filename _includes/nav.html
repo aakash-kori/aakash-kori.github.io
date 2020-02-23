@@ -3,14 +3,14 @@
     <button class="navbar-toggler ml-auto" type="button">
         <span class="navbar-toggler-icon" id="nav-toggler"></span>
     </button>
-    <div class="navbar-collapse">
-        <ul class="navbar-nav navbar-collapse collapse">
+    <div class="navbar-collapse collapse">
+        <ul class="navbar-nav">
             {%include nav_item.html url="/" name="Home"%}
             {%include nav_item.html url="/categories/" name="Categories"%}
             {%include nav_item.html url="/about/" name="About"%}
             {%include nav_item.html url="/thanks/" name="Thanks"%}
         </ul>
-        <ul class="navbar-nav navbar-collapse collapse justify-content-end">
+        <ul class="navbar-nav ml-auto">
             {%include theme.html %}
 
             {% capture url%}{{ "mailto:"| append: site.email }}{% endcapture %}
@@ -26,7 +26,7 @@
 </nav>
 <script>
     document.getElementById("nav-toggler").onclick = function (e) {
-        Array.from(document.getElementsByClassName("navbar-nav")).forEach(
+        Array.from(document.getElementsByClassName("navbar-collapse")).forEach(
             function (e) {
                 e.classList.toggle("collapse")
             }
