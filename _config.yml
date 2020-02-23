@@ -1,12 +1,3 @@
-# site
-baseurl: "/sak96-blog"
-title: "sak96-blog"
-
-# about me 
-username: sak96
-email: sakamath1996@gmail.com 
-avatar: "https://github.com/sak96.png"
-
 # thanks to
 thanks:
   - { author: twbs, name: bootstrap, link: "https://github.com/twbs/bootstrap" }
@@ -22,3 +13,4 @@ exclude:
   - TODO.md
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata 

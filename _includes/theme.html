@@ -49,6 +49,7 @@
         // add drop down event
         var themeBtn = document.getElementById("theme-btn");
         themeBtn.onclick = function (event) {
+            console.log("{{site.github}}")
             var themeMenu = document.getElementById("theme-menu");
             themeMenu.classList.toggle("show")
             event.stopPropagation();
