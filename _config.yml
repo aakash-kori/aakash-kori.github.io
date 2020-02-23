@@ -7,6 +7,11 @@ thanks:
       name: font-awesome-svg,
       link: "https://github.com/ivanvotti/font-awesome-svg",
     }
+  - {
+      author: thomaspark,
+      name: bootswatch,
+      link: "https://github.com/thomaspark/bootswatch",
+    }
 
 # exclude files from hosting 
 exclude: 
