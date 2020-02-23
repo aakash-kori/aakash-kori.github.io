@@ -1,13 +1,5 @@
-# site
-baseurl: "/sak96-blog"
-title: "sak96-blog"
-
-# about me 
-username: sak96
-email: sakamath1996@gmail.com 
-avatar: "https://github.com/sak96.png"
-
-# thanks to
+# list of packages used by this website 
+# author, package name, package link 
 thanks:
   - { author: twbs, name: bootstrap, link: "https://github.com/twbs/bootstrap" }
   - {
@@ -16,9 +8,12 @@ thanks:
       link: "https://github.com/ivanvotti/font-awesome-svg",
     }
 
-# other config
+# exclude files from hosting 
 exclude: 
   - LICENSE
   - TODO.md
+
+# plugin required by hoster
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata 
