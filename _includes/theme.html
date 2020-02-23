@@ -65,8 +65,8 @@
         };
 
         // set cookie based on selection
-        var y = document.getElementsByClassName("theme-item");
-        Array.from(y).forEach(element => {
+        var themeItems = document.getElementsByClassName("theme-item");
+        Array.from(themeItems).forEach(element => {
             element.onclick = (event) => {
                 setCookie("theme", element.getAttribute("theme"), 365);
                 loadTheme();
