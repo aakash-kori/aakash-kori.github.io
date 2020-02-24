@@ -1,9 +1,10 @@
 - [x] use [github-metadata plugin](https://github.com/jekyll/github-metadata)
     - [x] use default variables to allow no changes after fork
 - [ ] add `README.md` and documentation
-    - [ ] add tutorial (clone, gh-page)
+    - [x] add tutorial (clone, gh-page)
     - [ ] add how-to-guide (post, themes) 
     - [ ] add references (theme, categories) 
+    - [ ] add explanation (why bootstrap, ...)
 - [ ] setup categories
     - [x] category page 
     - [ ] paginated categories 
