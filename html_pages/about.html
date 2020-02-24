@@ -3,14 +3,14 @@ layout: default
 title: About
 permalink: /about/
 ---
-<div class="col-sm-5 offset-sm-1 align-self-center">
-  <div class="mt-2">
+<div class="col-sm-4 my-5 offset-sm-1 align-self-center">
+  <div class="text-center">
     <h4>Hello, I'm</h4>
     <h1>{{site.github.owner_name}},</h1>
     <h2>Developer</h2>
     <br />
     <br />
-    <div class="row">
+    <div class="row justify-content-center">
       {% capture url%}{{ "mailto:"| append: site.github.owner.email }}{% endcapture %}
       {%include about_icon.html url=url img="envelope-square.svg"%}
 
@@ -22,8 +22,8 @@ permalink: /about/
     </div>
   </div>
 </div>
-<div class="col-sm-5 col-sm-offset-1">
-  <div class="mt-2">
+<div class="col-sm-4 offset-sm-2">
+  <div class="mt-5">
     <img class="rounded-circle img-thumbnail" src="{{site.github.owner_gravatar_url}}" alt="Profile picture">
   </div>
 </div>
