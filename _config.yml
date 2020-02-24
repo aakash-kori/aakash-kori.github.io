@@ -18,7 +18,7 @@ exclude:
   - LICENSE
   - TODO.md
 
-# plugin required by hoster
+# plugin required for hosting
 plugins:
   - jekyll-feed
   - jekyll-github-metadata

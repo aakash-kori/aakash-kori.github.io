@@ -10,8 +10,8 @@
     - [ ] page for each category 
     - [ ] feeds for each category
 - [ ] setup [ tags ](http://longqian.me/2017/02/09/github-jekyll-tag/)
-- [ ] improve mobile view 
-    - [ ] improve about page
+- [x] improve mobile view 
+    - [x] improve about page
     - [x] improve navbar
 - [ ] add copyright in post page
 - [ ] theme based fixes
