@@ -22,7 +22,7 @@ The article ["What nobody tells you about documentation"](https://www.divio.com/
 - doorway to your software for any user (setup/installation should be included)
 - multiple tasks (task: short set of steps)
 - should have simple achievement tasks(rewarding experience)
-- should work ##0% (induce confidence in software
+- should work 100% (induce confidence in software
 
 ### - Do nots:
 
