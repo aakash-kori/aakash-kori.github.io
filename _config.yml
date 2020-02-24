@@ -12,6 +12,7 @@ thanks:
 exclude:
   - LICENSE
   - TODO.md
+  - README.md
 
 # plugin required for hosting
 plugins:
