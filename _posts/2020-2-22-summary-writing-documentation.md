@@ -4,6 +4,7 @@ title: 'Summary: "What nobody tells you about documentation"'
 category: "notes"
 tags: ["writing", "documentation", "programming"]
 desc: This article tries to summaries "What nobody tells you about documentation"
+poster: documentation.jpg
 ---
 
 The article ["What nobody tells you about documentation"](https://www.divio.com/blog/documentation) details on how to write documentation for program. This article aims at providing details of different types of documentation, their intent, content, scope and purpose. This simplifies the documentation process by helping writer have right mindset while documenting.
