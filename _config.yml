@@ -12,6 +12,11 @@ thanks:
       name: bootswatch,
       link: "https://github.com/thomaspark/bootswatch",
     }
+  - {
+      author: pexels.com,
+      name: poster images,
+      link: "https://www.pexels.com",
+    }
 
 # default values 
 defaults:
@@ -21,7 +26,7 @@ defaults:
       type: "posts"
     values:
       layout: post
-      poster: ""
+      poster: "blog.jpg"
       category: "misc"
       tags: []
       desc: "" 
