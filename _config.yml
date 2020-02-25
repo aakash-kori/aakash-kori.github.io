@@ -13,10 +13,24 @@ thanks:
       link: "https://github.com/thomaspark/bootswatch",
     }
 
+# default values 
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      poster: ""
+      category: "misc"
+      tags: []
+      desc: "" 
+
 # exclude files from hosting
 exclude:
   - LICENSE
   - TODO.md
+  - README.md
 
 # plugin required for hosting
 plugins:
