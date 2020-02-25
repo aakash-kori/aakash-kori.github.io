@@ -11,6 +11,7 @@ Has Features:
 
 1. feed support
 1. bootstrap theme support
+1. poster support
 1. post category support
 1. github metdata support
 
