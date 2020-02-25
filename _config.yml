@@ -8,6 +8,18 @@ thanks:
       link: "https://github.com/ivanvotti/font-awesome-svg",
     }
 
+# default values 
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      category: "misc"
+      tags: []
+      desc: "" 
+
 # exclude files from hosting
 exclude:
   - LICENSE
