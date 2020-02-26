@@ -18,14 +18,14 @@ The article ["What nobody tells you about documentation"](https://www.divio.com/
 - orientation: learning
 - purpose: practical + studying
 
-### - Dos:
+### * Dos:
 
 - doorway to your software for any user (setup/installation should be included)
 - multiple tasks (task: short set of steps)
 - should have simple achievement tasks(rewarding experience)
 - should work 100% (induce confidence in software
 
-### - Do nots:
+### * Do nots:
 
 - need not use best practice if not required (complicates process)
 - do not explain beyond what is required (makes tutorial long)
@@ -37,14 +37,14 @@ The article ["What nobody tells you about documentation"](https://www.divio.com/
 - orientation: goal
 - purpose: practical + working
 
-### - Dos:
+### * Dos:
 
 - should be working (can be part of test-cases)
 - should have proper heading (possible search phrase)
 - should setup/installation (intermediate level)
 - should be flexible (include small variation)
 
-### - Do nots:
+### * Do nots:
 
 - should not explain more (link to api documentation)
 
@@ -55,13 +55,13 @@ The article ["What nobody tells you about documentation"](https://www.divio.com/
 - orientation: technical understanding
 - purpose: theory + studying
 
-### - Dos:
+### * Dos:
 
 - should be code based (auto generate is better)
 - example if required (for edge case which is difficult to describe)
 - consistent structure (helps reading)
 
-### - Do nots:
+### * Do nots:
 
 - should not explain about design decision (explain what code does, not why)
 - should not be goal oriented (put it in how to guide)
@@ -73,7 +73,7 @@ The article ["What nobody tells you about documentation"](https://www.divio.com/
 - orientation: information
 - purpose: theory + working
 
-### - Dos:
+### * Dos:
 
 - include discussions
 - include design decision (including alternatives)
