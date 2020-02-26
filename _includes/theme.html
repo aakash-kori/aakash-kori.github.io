@@ -3,7 +3,7 @@
     <ul class="dropdown-menu" id="theme-menu">
         {% for file in site.static_files %}
         {% if file.extname == ".css" %}
-        <li class="dropdown-item theme-item" theme="{{site.baseurl}}{{file.path}}">{{file.basename}}</li>
+        <li class="dropdown-item btn theme-item" theme="{{site.baseurl}}{{file.path}}">{{file.basename}}</li>
         {% endif %}
         {% endfor %}
     </ul>
