@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Summary: "Write An Excellent Programming Blog"'
 category: "notes"
 tags: ["writing", "articles", "programming"]

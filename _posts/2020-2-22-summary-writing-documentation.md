@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Summary: "What nobody tells you about documentation"'
 category: "notes"
 tags: ["writing", "documentation", "programming"]
