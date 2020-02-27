@@ -14,7 +14,9 @@ layout: page
   {{ content }}
 </div>
 {% include page_nav.html %}
-<hr class="my-4">
+<hr class="my-3">
 <div class="container-fluid text-center">
-  © {{ page.date | date: "%Y" }} Copyright <a href={{site.github.owner_url}}>{{site.github.owner_name}}</a>
+  <small>
+    © {{ page.date | date: "%Y" }} Copyright <a href={{site.github.owner_url}}>{{site.github.owner_name}}</a>
+  </small>
 </div>
