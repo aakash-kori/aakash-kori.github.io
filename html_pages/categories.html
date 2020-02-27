@@ -3,7 +3,7 @@ layout: page
 permalink: /categories/
 title: Categories
 ---
-{% if site.categories == {} %}
+{% if site.categories != {} %}
 {% for category in site.categories %}
 <h2>{{ category | first | capitalize }}</h2>
 {% for post in category.last %}
