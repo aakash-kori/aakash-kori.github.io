@@ -6,7 +6,7 @@ permalink: /
 <h2>
    Recent Articles
 </h2>
-{% for post in site.posts limit:2 %}
+{% for post in site.posts limit:10 %}
     {%include post_item.html post=post%}
 {% endfor %}
 
