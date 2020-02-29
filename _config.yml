@@ -7,6 +7,11 @@ thanks:
       name: font-awesome-svg,
       link: "https://github.com/ivanvotti/font-awesome-svg",
     }
+  - {
+      author: dracula,
+      name: rouge-dracula,
+      link: "https://github.com/dracula/gh-pages/blob/master/_sass/rouge-dracula.scss",
+    }
 
 # default values 
 defaults:
@@ -31,3 +36,10 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+
+# Markdown Configuration
+kramdown:
+  input: GFM # github flavoured markdown
+  syntax_highlighter: rouge 
+  syntax_highlighter_opts:
+    css_class: 'highlight'
