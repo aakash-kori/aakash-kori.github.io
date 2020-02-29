@@ -36,6 +36,7 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-sitemap
 
 # Markdown Configuration
 kramdown:
