@@ -13,20 +13,20 @@ Has Features:
 1. bootstrap theme support
 1. poster support
 1. post category support
-1. github metdata support
+1. github metadata support
 
 # Setup
 
-1. Fork and Clone the repository. More information [here](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
-1. Delete my `gh-pages` branch in local and remote.
+1. Fork and Clone the repository. More information [here](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). To host the repo at root url, the repository name must be `<your username>.github.io`.
+1. Delete my `master` branch in local and remote.
    ```bash
-   git branch -D gh-pages  # deletes local gh-pages
-   git push -d origin gh-pages  # delete remote gh-pages
+   git branch -D master  # deletes local master
+   git push -d origin master  # delete remote master
    ```
-1. Create your `gh-pages` branch in local and remote.
+1. Create your `master` branch in local and remote.
    ```bash
-   git checkout -b gh-pages  # creates local gh-pages
-   git push --set-upstream origin gh-pages  # creates remote gh-pages
+   git checkout -b master  # creates local master
+   git push --set-upstream origin master  # creates remote master
    ```
 1. Create `_posts` folder and start blogging. Happy blogging.
    ```bash
