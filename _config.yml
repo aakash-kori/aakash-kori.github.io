@@ -12,16 +12,16 @@ thanks:
       name: bootswatch,
       link: "https://github.com/thomaspark/bootswatch",
     }
+  - { author: pexels.com, name: poster images, link: "https://www.pexels.com" }
   - {
-      author: pexels.com,
-      name: poster images,
-      link: "https://www.pexels.com",
+      author: dracula,
+      name: rouge-dracula,
+      link: "https://github.com/dracula/gh-pages/blob/master/_sass/rouge-dracula.scss",
     }
 
-# default values 
+# default values
 defaults:
-  -
-    scope:
+  - scope:
       path: "_posts"
       type: "posts"
     values:
@@ -29,7 +29,7 @@ defaults:
       poster: "blog.jpg"
       category: "misc"
       tags: []
-      desc: "" 
+      desc: ""
 
 # exclude files from hosting
 exclude:
@@ -41,3 +41,10 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+
+# Markdown Configuration
+kramdown:
+  input: GFM # github flavoured markdown
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
