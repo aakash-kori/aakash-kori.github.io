@@ -122,6 +122,10 @@
         }
     })
 
-    loadTheme();
-
+    {
+        // load the theme
+        var temp = getCookie("theme");
+        if (!temp) temp = "{{site.baseurl}}/css/bootstrap.css"
+        document.write("<link href=\"" + temp + ".css\"rel='stylesheet'>")
+    }
 </script>
