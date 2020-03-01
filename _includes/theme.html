@@ -69,7 +69,28 @@
         var navLinkArray = Array.from(navBar.getElementsByTagName("a"));
         var themeBtn = navLinkArray.find((a) => { return a.innerText == "Theme" })
         themeBtn.classList.add("dropdown-toggle")
-        themeBtn.parentNode.classList.add("dropdown") 
+        themeBtn.parentNode.classList.add("dropdown")
+
+        // create dropdown  
+        var themeMenu = document.createElement("ul")
+        themeMenu.classList.add("dropdown-menu")
+        themeMenu.id = "theme-menu"
+        {
+            // add themes to dropdown list
+            for (var [name, path] of Object.entries(themes)) {
+                var li = document.createElement("li")
+                li.onclick = (event) => {
+                    setCookie("theme", path, 365);
+                    loadTheme();
+                    event.stopPropagation();
+                    event.cancelBubble = true;
+                }
+                li.classList.add("dropdown-item", "theme-item")
+                li.innerText = name
+                themeMenu.appendChild(li)
+            }
+        }
+        themeBtn.parentNode.insertBefore(themeMenu, themeBtn.nextSibling);
 
         // add drop down event
         themeBtn.onclick = function (event) {
