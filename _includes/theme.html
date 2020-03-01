@@ -64,8 +64,14 @@
     }
 
     window.onload = function () {
+        // add drop down caret
+        var navBar = document.getElementsByTagName("nav")[0];
+        var navLinkArray = Array.from(navBar.getElementsByTagName("a"));
+        var themeBtn = navLinkArray.find((a) => { return a.innerText == "Theme" })
+        themeBtn.classList.add("dropdown-toggle")
+        themeBtn.parentNode.classList.add("dropdown") 
+
         // add drop down event
-        var themeBtn = document.getElementById("theme-btn");
         themeBtn.onclick = function (event) {
             var themeMenu = document.getElementById("theme-menu");
             themeMenu.classList.toggle("show")
