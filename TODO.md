@@ -14,7 +14,7 @@
 - [x] improve mobile view 
     - [x] improve about page
     - [x] improve navbar
-- [ ] add copyright in post page
+- [x] add copyright in post page
 - [ ] theme based fixes
     - [x] highlight current theme
     - [ ] try to fix the delay in loading theme
