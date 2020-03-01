@@ -67,7 +67,8 @@
         themeMenu.id = "theme-menu"
         {
             // add themes to dropdown list
-            for (var [name, path] of Object.entries(themes)) {
+            let theme = getCookie("theme");
+            for (let [name, path] of Object.entries(themes)) {
                 var li = document.createElement("li")
                 li.onclick = (event) => {
                     setCookie("theme", path, 365);
@@ -77,6 +78,7 @@
                 }
                 li.classList.add("dropdown-item", "theme-item")
                 li.innerText = name
+                if (path === theme) li.classList.add("active") 
                 themeMenu.appendChild(li)
             }
         }
