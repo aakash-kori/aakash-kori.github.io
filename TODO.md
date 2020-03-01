@@ -1,9 +1,15 @@
 - [x] use [github-metadata plugin](https://github.com/jekyll/github-metadata)
     - [x] use default variables to allow no changes after fork
 - [ ] add `README.md` and documentation
-    - [x] add tutorial (clone, gh-page)
+    - [ ] add tutorial (clone, gh-page)
+        - [x] add readme.md
+        - [ ] add [gif](https://github.com/barryclark/jekyll-now/blob/master/images/jekyll-now-theme-screenshot.jpg) for cloning
     - [ ] add how-to-guide (post, themes) 
+        - [ ] themes
+        - [ ] post
     - [ ] add references (theme, categories) 
+        - [ ] file structure with brief description
+        - [ ] detail of each file
     - [ ] add explanation (why bootstrap, ...)
 - [ ] add supports for comments using [github issues](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html)
     - [ ] count for likes thumbs up if possible
