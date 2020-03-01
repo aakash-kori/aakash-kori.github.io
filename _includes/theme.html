@@ -13,8 +13,8 @@
     var themes = {
         {% for file in site.static_files %}
     {% if file.extname == ".css" %}
-   "{{ file.basename }}": "{{site.baseurl}}{{file.path}}",
-    {% endif %}
+    "{{ file.basename }}": "{{site.baseurl}}{{file.path}}",
+        {% endif %}
     {% endfor %}
     }
 
