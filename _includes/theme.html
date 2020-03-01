@@ -9,6 +9,15 @@
     </ul>
 </li> -->
 <script>
+    // object of themes, indentation is mess as liquid and js issue with auto formatter
+    var themes = {
+        {% for file in site.static_files %}
+    {% if file.extname == ".css" %}
+   "{{ file.basename }}": "{{site.baseurl}}{{file.path}}",
+    {% endif %}
+    {% endfor %}
+    }
+
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
