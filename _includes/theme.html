@@ -90,16 +90,6 @@
             event.cancelBubble = true;
         };
 
-        // set cookie based on selection
-        var themeItems = document.getElementsByClassName("theme-item");
-        Array.from(themeItems).forEach(element => {
-            element.onclick = (event) => {
-                setCookie("theme", element.getAttribute("theme"), 365);
-                loadTheme();
-                event.stopPropagation();
-                event.cancelBubble = true;
-            };
-        });
     };
 
     // collapse theme menu when clicking outside dialog box  
