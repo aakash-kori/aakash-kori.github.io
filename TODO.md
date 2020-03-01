@@ -5,6 +5,9 @@
     - [ ] add how-to-guide (post, themes) 
     - [ ] add references (theme, categories) 
     - [ ] add explanation (why bootstrap, ...)
+- [ ] add supports for comments using [github issues](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html)
+    - [ ] count for likes thumbs up if possible
+    - [ ] add template for creating such issues
 - [ ] setup categories
     - [x] category page 
     - [ ] paginated categories 
