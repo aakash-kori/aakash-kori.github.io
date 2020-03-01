@@ -48,3 +48,7 @@ Has Features:
    ```bash
    jekyll serve --config _config.yml,_local.yml
    ```
+
+# Todo list
+
+Todo list is [here](TODO.md).
