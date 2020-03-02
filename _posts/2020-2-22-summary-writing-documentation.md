@@ -6,75 +6,76 @@ desc: This article tries to summaries "What nobody tells you about documentation
 poster: documentation.jpg
 ---
 
-The article ["What nobody tells you about documentation"](https://www.divio.com/blog/documentation) details on how to write documentation for program. This article aims at providing details of different types of documentation, their intent, content, scope and purpose. This simplifies the documentation process by helping writer have right mindset while documenting.
+The article ["What nobody tells you about documentation"](https://www.divio.com/blog/documentation) details on writing manuals for software. It provides details of different it's components, their intent, content, scope and purpose. This simplifies the process by helping writer have right mindset.
 
 # Types of Documentation
 
 ## Tutorial
 
-- example: readme
-- level: beginner
-- orientation: learning
-- purpose: practical + studying
+- Example: readme.
+- Level: beginner.
+- Orientation: to learn.
+- Purpose: practical + to study.
 
-### * Dos:
+### \* Dos:
 
-- doorway to your software for any user (setup/installation should be included)
-- multiple tasks (task: short set of steps)
-- should have simple achievement tasks(rewarding experience)
-- should work 100% (induce confidence in software
+- Doorway to your software for any user (setup/installation should be included).
+- Multiple tasks (task: short set of steps).
+- Should have simple tasks.
+- Should reward user with knowledge.
+- Should work 100% (makes user confident).
 
-### * Do nots:
+### \* Do nots:
 
-- need not use best practice if not required (complicates process)
-- do not explain beyond what is required (makes tutorial long)
+- Need not use best practice if not required (complicates process).
+- Do not explain beyond what is required (makes tutorial long).
 
 ## How to guides
 
-- example: how to fetch x information
-- level: intermediate
-- orientation: goal
-- purpose: practical + working
+- Example: how to print integer.
+- Level: intermediate.
+- Orientation: goal.
+- Purpose: practical + for work.
 
-### * Dos:
+### \* Dos:
 
-- should be working (can be part of test-cases)
-- should have proper heading (possible search phrase)
-- should setup/installation (intermediate level)
-- should be flexible (include small variation)
+- Should be working (can be part of test-cases).
+- Should have proper heading (possible search phrase).
+- Should setup/installation (intermediate level).
+- Should be flexible (include small variation).
 
-### * Do nots:
+### \* Do nots:
 
-- should not explain more (link to api documentation)
+- Should not explain more (link to api documentation).
 
 ## Explanation
 
-- example: api documentation
-- level: experienced
-- orientation: technical understanding
-- purpose: theory + studying
+- Example: api docs.
+- Level: experienced.
+- Orientation: technical details.
+- Purpose: theory + to study.
 
-### * Dos:
+### \* Dos:
 
-- should be code based (auto generate is better)
-- example if required (for edge case which is difficult to describe)
-- consistent structure (helps reading)
+- Should be code based (auto generate is better).
+- Example if required (for edge case which is difficult to describe).
+- Consistent structure (helps reading).
 
-### * Do nots:
+### \* Do nots:
 
-- should not explain about design decision (explain what code does, not why)
-- should not be goal oriented (put it in how to guide)
+- Should not explain about design decision (explain what code does, not why).
+- Should not be goal oriented (put it in how to guide).
 
 ## Reference
 
-- example: readme
-- level: advanced expert
-- orientation: information
-- purpose: theory + working
+- Example: white paper.
+- Level: advanced expert.
+- Orientation: to inform.
+- Purpose: theory + working.
 
-### * Dos:
+### \* Dos:
 
-- include discussions
-- include design decision (including alternatives)
-- include historical reasons
-- include good practices
+- Include discussions.
+- Include design decision (including alternatives).
+- Include historical reasons.
+- Include good practices.

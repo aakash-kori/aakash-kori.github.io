@@ -5,57 +5,57 @@ tags: ["writing", "articles", "programming"]
 desc: This article tries to summaries "Write An Excellent Programming Blog"
 ---
 
-The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write programing articles. It categories articles, and details about how to write articles for given category. This helps in providing guidelines for beginners to write articles.
+The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write tech-based articles. It categories articles, and details about how to write articles for given category, which provides guidelines for beginners to write articles.
 
-# Type of articles
+# Types of articles
 
 ## Story
 
-- series of steps in event
-- moral of event
+- Series of steps in event.
+- Moral of event.
 
 ## Opinion
 
-- state hypothesis
-- give evidence for hypothesis
-- response to possible question
-- restate the hypothesis
-- note: do not hurt feeling
+- State hypothesis.
+- Provide evidence for hypothesis.
+- Response to possible question.
+- Restate the hypothesis.
+- Note: Do not hurt feeling.
 
 ## How to Guides
 
-- doing x is good for y situation
-- step for doing x
+- Doing x is good for y problem.
+- Step for doing x.
 
 ## How things work
 
-- pick some interesting thing say x
-- explain how x works
+- Pick thought provoking subject, say x.
+- Explain how x works.
 
 ## Review
 
-- I used x
-- the experience
-- the strength vs weakness
-- conclusion (using some criteria)
-- analyses do not say yes or no.
-- useful for reader
+- I used x.
+- State your experience.
+- Strength vs Weakness.
+- Have conclusion (using some criteria).
+- Analyses do not say yes or no.
+- Useful for reader
 
 # How to get audience ?
 
-- aggregators
-- weekly feeds
-- do not compete for audience
+- Aggregators.
+- Weekly Feeds.
+- Do not compete for audience.
 
 # How to improve ?
 
-- practice: write, write and write
-- pull style from your liked authors
-- read, analyse and apply
-- get editors or friend review
+- Practice: write, write and write.
+- Pull style from your liked authors.
+- Read, analyse and apply.
+- Get editors or friend review
 
 # How to make time to write ?
 
-- write when having something interesting
-- write infrequently
-- write short (say reviews) - for practicing
+- Write when having exciting topic.
+- Write infrequently.
+- Write short (say reviews) - practicing.

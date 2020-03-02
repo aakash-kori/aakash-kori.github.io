@@ -120,7 +120,7 @@ Once information is gathered, we may need to tweak the container or live-debug. 
 
 # Post Debugging
 
-After figuring out the issue, You may want to patch the environment or rollback and also do some basic cleanup. Rollback would be to tag previous tag to latest. In case previous tag is not available (as it is first deployment) or the version has some specific changes which cannot be reverted and patch release may take time, there is need to patch the docker.
+After figuring out the issue, You may want to patch the environment or rollback and also do some basic cleanup. Rollback would be to tag previous tag to latest. In case previous tag is not available (as it is first deployment) or the version has some specific changes which cannot be reverted and patch release may take time, then docker needs to be patched.
 
 ## Rollback
 
@@ -132,7 +132,7 @@ After figuring out the issue, You may want to patch the environment or rollback 
 
 ## Patch
 
-patching depends on the method used for debugging. In case of running container you can just commit it. For exited container which was run using custom entry point, entry point is overwritten. So the patching required to revert the entry point.
+Patching depends on the method used for debugging. In case of running container you can just commit it. For exited container which was run using custom entry point, entry point is overwritten. So the patching required to revert the entry point.
 
 ### Docker was exec-ed
 
