@@ -6,11 +6,11 @@ title: Categories
 {% if site.categories.size != 0 %}
 {% for category in site.categories %}
 <h2>{{ category | first | capitalize }}</h2>
-{% for post in category.last %}
-<div class="list-group ">
+<div class="list-group">
+    {% for post in category.last %}
     {% include post_item.html post=post %}
+    {% endfor %}
 </div>
-{% endfor %}
 {% endfor %}
 {% else %}
 {% include coming_soon.html %}
