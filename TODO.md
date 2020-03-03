@@ -26,4 +26,5 @@
 - [x] add copyright in post page
 - [ ] theme based fixes
     - [x] highlight current theme
-    - [ ] try to fix the delay in loading theme
+    - [x] try to fix the delay in loading theme
+    - [ ] use let vs var (local vs global scope)
