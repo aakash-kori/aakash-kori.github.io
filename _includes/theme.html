@@ -57,7 +57,7 @@
         // add drop down caret
         var navBar = document.getElementsByTagName("nav")[0];
         var navLinkArray = Array.from(navBar.getElementsByTagName("a"));
-        var themeBtn = navLinkArray.find((a) => { return a.innerText == "Theme" })
+        var themeBtn = navLinkArray.find((a) => { return a.innerText.toUpperCase() == "Theme".toUpperCase() })
         themeBtn.classList.add("dropdown-toggle")
         themeBtn.parentNode.classList.add("dropdown")
 
