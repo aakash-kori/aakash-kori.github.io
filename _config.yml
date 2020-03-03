@@ -1,5 +1,5 @@
 ## editable
-default_theme: 
+default_theme: "lux"
 
 # list of packages used by this website
 # author, package name, package link
