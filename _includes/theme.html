@@ -1,14 +1,13 @@
-<li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" id="theme-btn">Themes</a>
-    <ul class="dropdown-menu" id="theme-menu">
-        {% for file in site.static_files %}
-        {% if file.extname == ".css" %}
-        <li class="dropdown-item btn theme-item" theme="{{site.baseurl}}{{file.path}}">{{file.basename}}</li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-</li>
 <script>
+    // object of themes, indentation is mess as liquid and js issue with auto formatter
+    var themes = {
+        {% for file in site.static_files %}
+    {% if file.extname == ".css" %}
+    "{{ file.basename }}": "{{site.baseurl}}{{file.path}}",
+        {% endif %}
+    {% endfor %}
+    }
+
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
@@ -55,8 +54,37 @@
     }
 
     window.onload = function () {
+        // add drop down caret
+        var navBar = document.getElementsByTagName("nav")[0];
+        var navLinkArray = Array.from(navBar.getElementsByTagName("a"));
+        var themeBtn = navLinkArray.find((a) => { return a.innerText.toUpperCase() == "Theme".toUpperCase() })
+        themeBtn.classList.add("dropdown-toggle")
+        themeBtn.parentNode.classList.add("dropdown")
+
+        // create dropdown  
+        var themeMenu = document.createElement("ul")
+        themeMenu.classList.add("dropdown-menu")
+        themeMenu.id = "theme-menu"
+        {
+            // add themes to dropdown list
+            let theme = getCookie("theme");
+            for (let [name, path] of Object.entries(themes)) {
+                var li = document.createElement("li")
+                li.onclick = (event) => {
+                    setCookie("theme", path, 365);
+                    loadTheme();
+                    event.stopPropagation();
+                    event.cancelBubble = true;
+                }
+                li.classList.add("dropdown-item", "theme-item")
+                li.innerText = name
+                if (path === theme) li.classList.add("active") 
+                themeMenu.appendChild(li)
+            }
+        }
+        themeBtn.parentNode.insertBefore(themeMenu, themeBtn.nextSibling);
+
         // add drop down event
-        var themeBtn = document.getElementById("theme-btn");
         themeBtn.onclick = function (event) {
             var themeMenu = document.getElementById("theme-menu");
             themeMenu.classList.toggle("show")
@@ -64,16 +92,6 @@
             event.cancelBubble = true;
         };
 
-        // set cookie based on selection
-        var themeItems = document.getElementsByClassName("theme-item");
-        Array.from(themeItems).forEach(element => {
-            element.onclick = (event) => {
-                setCookie("theme", element.getAttribute("theme"), 365);
-                loadTheme();
-                event.stopPropagation();
-                event.cancelBubble = true;
-            };
-        });
     };
 
     // collapse theme menu when clicking outside dialog box  
@@ -86,6 +104,10 @@
         }
     })
 
-    loadTheme();
-
+    {
+        // load the theme
+        var temp = getCookie("theme");
+        if (!temp) temp = "{{site.baseurl}}/css/bootstrap.css"
+        document.write("<link href=\"" + temp + "\"rel='stylesheet'>")
+    }
 </script>
