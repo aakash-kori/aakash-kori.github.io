@@ -7,9 +7,11 @@ permalink: /
 <h2>
     Recent Articles
 </h2>
-{% for post in site.posts limit:10 %}
-{%include post_item.html post=post%}
-{% endfor %}
+<div class="list-group">
+    {% for post in site.posts limit:10 %}
+        {%include post_item.html post=post%}
+    {% endfor %}
+</div>
 {% else %}
 {% include coming_soon.html %}
 {% endif %}

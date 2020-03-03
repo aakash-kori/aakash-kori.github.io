@@ -27,4 +27,5 @@
 - [ ] theme based fixes
     - [x] highlight current theme
     - [x] try to fix the delay in loading theme
+    - [x] add default theme
     - [ ] use let vs var (local vs global scope)
