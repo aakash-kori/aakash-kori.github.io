@@ -1,4 +1,10 @@
 <script>
+    {% if site.default_theme != _blank %}
+    var default_theme = "{{site.baseurl}}/css/{{site.default_theme}}.css"
+    {% else %}
+    var default_theme = "{{site.baseurl}}/css/bootstrap.css"
+    {% endif %}
+
     // object of themes, indentation is mess as liquid and js issue with auto formatter
     var themes = {
         {% for file in site.static_files %}
@@ -34,7 +40,7 @@
         // if theme cookie present use it to load theme
         var theme = getCookie("theme");
         var link = document.createElement("link");
-        if (!theme) theme = "{{site.baseurl}}/css/bootstrap.css"
+        if (!theme) theme = default_theme 
         link.href = theme;
         link.rel = "stylesheet";
         document.head.appendChild(link);
@@ -107,7 +113,7 @@
     {
         // load the theme
         var temp = getCookie("theme");
-        if (!temp) temp = "{{site.baseurl}}/css/bootstrap.css"
+        if (!temp) temp = default_theme
         document.write("<link href=\"" + temp + "\"rel='stylesheet'>")
     }
 </script>

@@ -1,3 +1,6 @@
+## editable
+default_theme: 
+
 # list of packages used by this website
 # author, package name, package link
 thanks:
@@ -13,7 +16,9 @@ thanks:
       link: "https://github.com/dracula/gh-pages/blob/master/_sass/rouge-dracula.scss",
     }
 
-# default values 
+# -----------------------------------------------------------------------------------------
+# non-editable
+# default values
 defaults:
   -
     scope:
