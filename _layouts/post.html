@@ -6,7 +6,7 @@ layout: page
   <h6>{{ page.desc }}</h6>
   <p class="text-muted">Written on {{ page.date | date: "%B %e, %Y" }}</p>
   <hr>
-  {% if page.poster != blank %}
+  {% if page.poster != _blank %}
   <img class="img-fluid my-4" src="{{site.baseurl}}/posters/{{page.poster}}">
   {% endif %}
 </div>
