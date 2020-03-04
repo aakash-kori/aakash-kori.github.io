@@ -4,6 +4,7 @@ category: "notes"
 tags: ["patching", "debugging", "docker"]
 desc: This article provide some notes for debugging and patching docker.
 poster: working-with-container.jpg
+issue_no: 3
 ---
 
 Containerization of software and services allows easy deployment, portability and many other benefits. Docker is one of wide-spread adopted technology used for containerization. I use docker while on work. There are many guide and articles about using and debugging docker. Here is my guide for debugging and patching docker. And link to [resources](#Resources).

@@ -3,6 +3,7 @@ title: 'Summary: "Write An Excellent Programming Blog"'
 category: "notes"
 tags: ["writing", "articles", "programming"]
 desc: This article tries to summaries "Write An Excellent Programming Blog"
+issue_no: 1
 ---
 
 The article ["Write An Excellent Programming Blog"](http://bit.ly/excellent-blog) talks about how to write tech-based articles. It categories articles, and details about how to write articles for given category, which provides guidelines for beginners to write articles.

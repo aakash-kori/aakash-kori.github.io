@@ -4,6 +4,7 @@ category: "notes"
 tags: ["writing", "documentation", "programming"]
 desc: This article tries to summaries "What nobody tells you about documentation"
 poster: documentation.jpg
+issue_no: 2
 ---
 
 The article ["What nobody tells you about documentation"](https://www.divio.com/blog/documentation) details on writing manuals for software. It provides details of different it's components, their intent, content, scope and purpose. This simplifies the process by helping writer have right mindset.
