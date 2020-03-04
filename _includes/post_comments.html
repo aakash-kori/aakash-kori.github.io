@@ -1,0 +1,66 @@
+<div id="comments" class="list-group"></div>
+<script>
+  let commentUrl = "{{site.github.api_url}}/repos/{{site.github.repository_nwo}}/issues/{{page.issue_no}}/comments"
+  let issueUrl = "{{site.github.issues_url}}/{{page.issue_no}}"
+  function PopulateComment(comments) {
+    commentsDiv = document.getElementById("comments");
+
+    // comments heading
+    let heading = document.createElement("div")
+    heading.classList.add("h2")
+    heading.innerText = "Comments"
+    commentsDiv.append(heading)
+
+    comments.forEach(comment => {
+      // username 
+      let username = document.createElement("div")
+      username.classList.add("text-capitalize", "h5")
+      username.innerText = comment.user.login
+
+      // posting time
+      updateTime = document.createElement("small")
+      updateTime.classList.add("text-muted")
+      updateTime.innerText = comment.updated_at
+
+      // comment head 
+      commentHead = document.createElement("div")
+      commentHead.classList.add("justify-content-between")
+      commentHead.append(username)
+      commentHead.append(updateTime)
+
+      // comment body
+      commentBody = document.createElement("div")
+      commentBody.classList.add("mb-1")
+      commentBody.innerText = comment.body
+
+      // create comment box
+      commentBox = document.createElement("a")
+      commentBox.classList.add("list-group-item", "list-group-item-action")
+      commentBox.append(commentHead)
+      commentBox.append(commentBody)
+      commentBox.href = comment.html_url
+
+      commentsDiv.append(commentBox)
+    });
+
+    // add comment
+    let addComment = document.createElement("a")
+    addComment.classList.add("list-group-item", "list-group-item-action", "h6")
+    addComment.href = issueUrl
+    addComment.innerText = "Have some comments? Add comment ..."
+    commentsDiv.append(addComment)
+
+  }
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', commentUrl, true);
+  xhr.responseType = 'json';
+  xhr.onload = function () {
+    var status = xhr.status;
+    if (status === 200) {
+      console.log(PopulateComment(xhr.response));
+    } else {
+      console.log(xhr.response);
+    }
+  };
+  xhr.send();
+</script>
