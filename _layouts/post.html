@@ -6,15 +6,19 @@ layout: page
   <h6>{{ page.desc }}</h6>
   <p class="text-muted">Written on {{ page.date | date: "%B %e, %Y" }}</p>
   <hr>
-  {% if page.poster != blank %}
+  {% if page.poster != _blank %}
   <img class="img-fluid my-4" src="{{site.baseurl}}/posters/{{page.poster}}">
   {% endif %}
 </div>
-<div>
-  {{ content }}
-</div>
+ <div> {{ content }}
+ </div>
 {% include page_nav.html %}
 <hr class="my-3">
+{% if page.issue_no != _blank %}
+{% include post_comments.html %}
+<hr class="my-3">
+{% endif %}
+{% include post_comments.html %}
 <div class="container-fluid text-center">
   <small>
     © {{ page.date | date: "%Y" }} Copyright <a href={{site.github.owner_url}}>{{site.github.owner_name}}</a>
