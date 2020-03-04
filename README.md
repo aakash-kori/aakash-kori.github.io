@@ -14,6 +14,7 @@ Has Features:
 1. poster support
 1. post category support
 1. github metadata support
+1. github comments to post integration
 
 # Setup
 
